@@ -4,9 +4,9 @@ const Circle = require('./lib/Circle')
 const Square = require('./lib/Square')
 const Triangle = require('./lib/Triangle')
 
-const Svg = require('./Svg')
+const Svg = require('./lib/Svg')
 
-function createShape() {
+function createLogo() {
     inquirer.prompt([
         {
             type: 'input',
@@ -17,7 +17,7 @@ function createShape() {
         },
         {
             type: 'input',
-            message: 'What color would you chosen characters to be?',
+            message: 'What color would you like your chosen characters to be?',
             name: 'characterColor',
         },
         {
@@ -57,3 +57,5 @@ function createShape() {
     })
     
 }
+
+module.exports = {createLogo}
