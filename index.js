@@ -4,7 +4,7 @@ const Circle = require('./lib/Circle')
 const Square = require('./lib/Square')
 const Triangle = require('./lib/Triangle')
 
-const Svg = require('./svg')
+const Svg = require('./Svg')
 
 function createShape() {
     inquirer.prompt([
@@ -13,7 +13,7 @@ function createShape() {
             message: 'What 3 characters would you like to include?',
             name: 'characters',
             validate: (characters) => 
-            characters.length<= 3 || 'Your logo can only include up to 3 characters.'
+            characters.length <= 3 || 'Your logo can only include up to 3 characters.'
         },
         {
             type: 'input',
