@@ -45,12 +45,14 @@ function createLogo() {
                 shape = new Triangle()
                 break;
         }
-        shape.setColor(shapeColor)
+        shape.setColor(res.shapeColor)
+
+        // console.log('this is the', shapeColor)
         
         const svg = new Svg()
-        svg.setText(characters, characterColor)
-        svg.setShape(shapeChoice)
-        return writeFile('logo.svg', svg.render())
+        svg.setText(res.characters, res.characterColor)
+        svg.setShape(res.shapeChoice)
+        return writeFile('logo.svg', Svg.render())
     })
     .then(()=> {
         console.log('Your logo has been generated!')
