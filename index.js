@@ -53,9 +53,11 @@ function createLogo() {
         return writeFile('logo.svg', svg.render())
     })
     .then(()=> {
-        console.log('You generated your logo!')
+        console.log('Your logo has been generated!')
     })
     
 }
+
+createLogo();
 
 module.exports = {createLogo}
