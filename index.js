@@ -4,7 +4,7 @@ const Circle = require('./lib/Circle')
 const Square = require('./lib/Square')
 const Triangle = require('./lib/Triangle')
 
-const Svg = require('./lib/Svg')
+const Svg = require('./lib/svg')
 
 function createLogo() {
     inquirer.prompt([
@@ -51,8 +51,8 @@ function createLogo() {
         
         const svg = new Svg()
         svg.setText(res.characters, res.characterColor)
-        svg.setShape(res.shapeChoice)
-        return writeFile('logo.svg', Svg.render())
+        svg.setShape(shape)
+        return writeFile('logo.svg', svg.render())
     })
     .then(()=> {
         console.log('Your logo has been generated!')
