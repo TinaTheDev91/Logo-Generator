@@ -27,4 +27,4 @@ https://drive.google.com/file/d/1NfPF8RPKffvbpgK6c_j_elglY2jAwPox/view
 
 Thank you to my instructor Suarav for teaching us OOP fundamentals.
 
-Thank you to my tutor, Jossy Olea with the assistance in debugging my code.
+Thank you to my tutor, Jossy Olea for assistance with getting my code started.
